@@ -81,8 +81,8 @@ const handleLogin = (event) => {
     user.color = getRandomColor()
 
     login.style.display = "none"
+    chat.style.display = "flex"
     websocket = new WebSocket("wss://testsite-sadi.onrender.com")
-    setTimeout(function() {chat.style.display = "flex"}, 2000);
     websocket.onmessage = processMessage
 }
 
@@ -96,9 +96,11 @@ const sendMessage = (event) => {
         content: chatInput.value
     }
 
-    websocket.send(JSON.stringify(message))
-
-    chatInput.value = ""
+    if (websocket.readyState === 1) {
+        websocket.send(JSON.stringify(message))
+        
+        chatInput.value = ""
+    }
 }
 
 loginForm.addEventListener("submit", handleLogin)
