@@ -1,0 +1,54 @@
+{
+  "name": "@claudionegao/easysocket",
+  "version": "1.0.0",
+  "description": "Simple Socket.io client wrapper for easy event emitting and listening with Next.js support (Pages & App Router)",
+  "main": "index.js",
+  "bin": {
+    "easysocket-setup": "./setup.js"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js || true"
+  },
+  "files": [
+    "index.js",
+    "server.js",
+    "route-app.js",
+    "setup.js",
+    "postinstall.js",
+    "README.md",
+    "INSTALLATION.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "socket.io",
+    "websocket",
+    "realtime",
+    "easy",
+    "simple",
+    "nextjs",
+    "next.js",
+    "app-router",
+    "pages-router",
+    "interactive-setup"
+  ],
+  "author": "claudionegao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claudionegao/easysocket"
+  },
+  "bugs": {
+    "url": "https://github.com/claudionegao/easysocket/issues"
+  },
+  "homepage": "https://github.com/claudionegao/easysocket#readme",
+  "peerDependencies": {
+    "next": "^13.0.0 || ^14.0.0 || ^15.0.0",
+    "react": "^18.0.0",
+    "socket.io-client": "^4.6.0",
+    "socket.io": "^4.6.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.6.0",
+    "socket.io": "^4.6.0"
+  }
+}

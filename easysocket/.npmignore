@@ -1,0 +1,31 @@
+# Desenvolvimento
+node_modules/
+.git/
+.gitignore
+
+# Testes
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Build
+dist/
+build/
+
+# Documentação de publicação (não precisa no pacote)
+PUBLISH.md
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
